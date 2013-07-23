@@ -11,6 +11,11 @@ app.get('/', function(request, response) {
 
 });
 
+process.env.PWD = process.cwd();
+app.use('/media',express.static(process.env.PWD+'/media'));
+
+
+
 var port = process.env.PORT || 5000;
 app.listen(port, function() {
   console.log("Listening on " + port);
