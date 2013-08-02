@@ -105,6 +105,13 @@
       .fb-like-box{
          float:left;
       }
+      /* http://support.addthis.com/customer/portal/questions/1136093-share-buttons-in-center-position */      
+      div.addthis_toolbox {
+	  width:180px;
+	  margin: 0 auto;
+      }
+    </style>
+
     </style>
   </head>
   <body>
@@ -167,7 +174,7 @@
 		    <h3>1000</h3> <p>backers</p>
 		  </div>
 		</div>
-		<div class="span4">
+		<div class="span4">                  
 		  <div class="linediv-c">
 		    <h3>$6000</h3> <p> of $10000</p>
 		  </div>
@@ -201,9 +208,23 @@
 		<!-- Social buttons are not included in default Bootstrap. -->
 		<!-- See: http://noizwaves.github.io/bootstrap-social-buttons -->
 
+		<!--
 		<a href="https://twitter.com/UQuantum"><button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter </button></a>
 		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 	        <a href="https://www.facebook.com/UniversidadQuantum"><button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook </button></a>
+                -->
+		<!-- AddThis Button BEGIN -->
+		<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+		  <a class="addthis_button_preferred_1"></a>
+		  <a class="addthis_button_preferred_2"></a>
+		  <a class="addthis_button_preferred_3"></a>
+		  <a class="addthis_button_preferred_4"></a>
+		  <a class="addthis_button_compact"></a>
+		  <a class="addthis_counter addthis_bubble_style"></a>
+		</div>
+		<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+		<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51fb11d44de4c8eb"></script>
+		<!-- AddThis Button END -->
 	      </div>
 	    </div>
 	  </div>
